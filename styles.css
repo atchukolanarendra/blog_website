@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fff4; /* Light green background */
+    color: #333; /* Dark gray text */
+}
+
+header {
+    background-color: #28a745; /* Vibrant green */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #e6ffe6; /* Light green */
+}
+
+.search-container input {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+}
+
+.search-container select {
+    padding: 0.5rem;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    background-color: #fff; /* White dropdown */
+    color: #28a745; /* Green text */
+}
+
+/* Results Section */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #ffffff; /* White */
+}
+
+.result-card {
+    border: 1px solid #28a745;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9; /* Very light gray */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-card h3 {
+    font-size: 1.5rem;
+    color: #28a745; /* Green headings */
+    margin-bottom: 0.5rem;
+}
+
+.result-card p {
+    margin: 0.5rem 0;
+    color: #555; /* Medium gray text */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #28a745;
+    color: #fff; /* White text */
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+}

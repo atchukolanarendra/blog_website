@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Search Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Enhanced Blog Search</h1>
+        <p>Explore a wide range of articles and categories</p>
+    </header>
+
+    <main>
+        <section class="search-container">
+            <input type="text" id="searchBox" placeholder="Search for articles..." oninput="filterResults()">
+            <select id="filterCategory" onchange="filterResults()">
+                <option value="all">All Categories</option>
+                <option value="Technology">Technology</option>
+                <option value="Lifestyle">Lifestyle</option>
+                <option value="Health">Health</option>
+                <option value="Travel">Travel</option>
+                <option value="Business">Business</option>
+            </select>
+        </section>
+
+        <section id="results">
+            <!-- Blog articles will populate here dynamically -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Enhanced Blog Search. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
